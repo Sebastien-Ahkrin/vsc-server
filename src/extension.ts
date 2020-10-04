@@ -1,4 +1,5 @@
 import { ExtensionContext, commands, window } from 'vscode';
+import { TreeServerProvider } from './TreeServerProvider';
 
 interface Command {
 	command: string,
@@ -19,6 +20,8 @@ export function activate(context: ExtensionContext) {
 			window.showInformationMessage("Hello, World!");
 		}
 	});
+
+	window.registerTreeDataProvider('serverView', new TreeServerProvider());
 }
 
 export function deactivate() {}

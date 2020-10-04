@@ -19,7 +19,15 @@
 				"command": "vsc-server.helloWorld",
 				"title": "Hello World"
 			}
-		]
+		],
+		"views": {
+			"explorer": [
+        {
+          "id": "serverView",
+          "name": "Serveurs possible"
+        }
+      ]
+		}
 	},
 	"scripts": {
 		"vscode:prepublish": "npm run compile",
