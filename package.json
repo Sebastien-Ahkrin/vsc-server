@@ -10,21 +10,15 @@
 		"Other"
 	],
 	"activationEvents": [
-		"onCommand:vsc-server.helloWorld"
+		"onView:serverView"
 	],
 	"main": "./out/extension.js",
 	"contributes": {
-		"commands": [
-			{
-				"command": "vsc-server.helloWorld",
-				"title": "Hello World"
-			}
-		],
 		"views": {
 			"explorer": [
         {
           "id": "serverView",
-          "name": "Serveurs possible"
+          "name": "Serveurs"
         }
       ]
 		}
